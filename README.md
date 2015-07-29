@@ -9,8 +9,11 @@ A module that introduces millipede in your Linux kernel.
 
 ## Usage
 
-    insmod millipede.ko
-    dmesg
+    # insmod millipede.ko
+    # dmesg | tail
+
+Results in:
+
     [11144934.647373]     ╚⊙ ⊙╝
     [11144934.647380]   ╚═(███)═╝
     [11144934.647382]  ╚═(███)═╝
