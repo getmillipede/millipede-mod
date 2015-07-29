@@ -39,7 +39,7 @@ static int millipede_spamming_thread(void * data)
 
 static int __init millipede_init(void)
 {
-  spamming_thread = kthread_create(&millipede_spamming_thread, NULL, "spamirq");
+  spamming_thread = kthread_create(&millipede_spamming_thread, NULL, "millipede");
   if (IS_ERR(spamming_thread))
     {
       printk(KERN_ALERT "kthread_create error\n");
