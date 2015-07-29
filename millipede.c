@@ -32,7 +32,7 @@ static int millipede_spamming_thread(void * data)
   while (!kthread_should_stop())
     {
       print_millipede();
-      mdelay(DELAY_MS);
+      msleep(DELAY_MS);
     }
   return 0;
 }
